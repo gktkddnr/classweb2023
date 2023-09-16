@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'ARCHISCULPTURE_v200';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2303@1.0/ARCHISCULPTURE_v200.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'ARCHISCULPTURE_v200';
+    background-image: url('./bg.jpg');
+    background-size: cover;
+}
+
+#name-modal{
+    width: 200px;
+    height:200px;
+    background-color: yellow;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
