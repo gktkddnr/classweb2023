@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myh1">이거슨 제목 태그입니다</h1>
+    <h1 id="myh2">이거슨 제목 태그입니다</h1>
+    <h1>이거슨 제목 태그입니다</h1>
+    <button id='bg'바탕색 바꾸기></button>
+    <script>
+        const h1=document.getElementsByTagName('h1')
+        console.log(h1)
+        h1[0].style.color='skyblue'
+        h1[0].innerText='소르베맛 쿠키'
+
+        const h2=document.createElement('h2')
+        h2.innerText='퓨어바닐라 쿠키'
+        h2.style.backgroundColor='yellow'  
+        document.body.appendChild(h2)
+
+        const a=document.createElement('a')
+        a.href='http://www.youtube.com'
+        a.innerText='???'
+        document.body.appendChild(a)
+
+        const myh1=document.getElementById("myh2")
+        //myh1.remove()
+        document.body.removeChild(myh1)
+
+        const btn=document.getElementById('bg')
+        btn.addEventListener('click', function(){
+            document.body.style.backgroundColor=' #ebff82'
+        })
+        </script>
+</body>
+</html>
